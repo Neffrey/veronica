@@ -34,7 +34,7 @@ export default function Home() {
           </Link>
           <div className="p-2" />
           <div className="text-center text-2xl lowercase">
-            hairstyling services, tailored to enhance your unique beauty.
+            hairstyling services, tailored to your unique beauty
           </div>
           <div className="p-4" />
           <Link href="/#services">
@@ -56,7 +56,9 @@ export default function Home() {
           </Link>
           <div className="p-4" />
           <Link href="/#contact">
-            <Button size={"lg"}>Send Me A Message</Button>
+            <Button size={"lg"} variant={"secondary"}>
+              Send Me A Message
+            </Button>
           </Link>
         </div>
 
