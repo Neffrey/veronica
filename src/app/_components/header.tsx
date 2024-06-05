@@ -18,13 +18,10 @@ const Header = () => {
         >
           <div
             // Logo Container
-            className="fill-primary-foreground h-12 w-12 cursor-pointer"
+            className="h-12 w-12 cursor-pointer fill-primary-foreground"
           >
             <NeffreyLogo />
           </div>
-          <h1 className="text-primary-foreground text-lg font-semibold sm:text-xl md:text-2xl lg:text-4xl">
-            nTips
-          </h1>
           {/* <div className="flex h-full flex-col justify-end">
           <h2 className="text-center text-lg tracking-wider text-foreground">
             Tip calculator for the homies
