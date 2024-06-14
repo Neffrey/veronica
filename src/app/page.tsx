@@ -212,9 +212,13 @@ export default function Home() {
               <p className="text-base">
                 We’d love to help you achieve the perfect look! Whether you’re
                 in need of a fresh cut, vibrant color, or a complete makeover,
-                VP Barbershop is here for you. To book an appointment or for any
-                inquiries, please don’t hesitate to reach out. Contact us today
-                and let us bring out the best in your hair!
+                VP Barbershop is here for you.
+              </p>
+              <br />
+              <p className="text-base">
+                To book an appointment or for any inquiries, please don’t
+                hesitate to reach out. Contact us today and let us bring out the
+                best in your hair!
               </p>
             </div>
             <ContactForm />
