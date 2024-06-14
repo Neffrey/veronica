@@ -5,8 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 // COMPONENTS
-import ChevronDown from "../components/svgs/ChevronDown";
+import ContactForm from "~/components/forms/contactForm";
 import { Button } from "~/components/ui/button";
+import ChevronDown from "../components/svgs/ChevronDown";
 
 export default function Home() {
   return (
@@ -175,9 +176,17 @@ export default function Home() {
             <h3 className="text-center text-4xl lowercase">About Me</h3>
             <div className="p-3" />
             <p className="text-base">
-              Quick section about yourself. This is where you can talk about
-              yourself and your path to becoming a barber stylist /
-              cosmetologist.
+              I’m Veronica Penn, a 2012 Century College beauty school graduate
+              with 10+ years of styling men’s and women’s hair. I have always
+              been creative and a social person which is what naturally led me
+              down this path as a Stylist/Barber.
+            </p>
+            <br />
+            <p className="text-base">
+              I am committed to providing the best service possible to all
+              clients. One of my passions is executing a foil shaver fade with
+              texture on top. I take pride in giving the confidence and ability
+              to express yourself with a cut tailored to you.
             </p>
           </div>
         </div>
@@ -201,10 +210,15 @@ export default function Home() {
               </h2>
               <div className="p-2" />
               <p className="text-base">
-                Quick little paragraph about how to get in touch with you. This
-                is also where a quick contact form will be placed.
+                We’d love to help you achieve the perfect look! Whether you’re
+                in need of a fresh cut, vibrant color, or a complete makeover,
+                our talented team of stylists is here for you. To book an
+                appointment or for any inquiries, please don’t hesitate to reach
+                out. Contact us today and let us bring out the best in your
+                hair!
               </p>
             </div>
+            <ContactForm />
           </div>
         </div>
       </div>
