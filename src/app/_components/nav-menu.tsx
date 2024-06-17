@@ -1,8 +1,4 @@
-// LIBS
-import Link from "next/link";
-
 // COMPONENTS
-import { Button } from "~/components/ui/button";
 import Items from "./nav-items";
 
 export type NavItems = {

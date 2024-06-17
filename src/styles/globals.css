@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 231, 15%, 18%; /* hsl(231, 15%, 18%) */
+    --background: 0, 0%, 12%; /* hsl(0, 0%, 12%) */
     --foreground: 0 0% 90%; /* hsl(0, 0%, 90%) */
 
-    --card: 231, 15%, 25%; /* hsl(231, 15%, 25%) */
+    --card: 0, 0%, 17%; /* hsl(0, 0%, 17%) */
     --card-foreground: 0 0% 95%; /* hsl(0, 0%, 95%) */
 
-    --popover: 231, 15%, 25%; /* hsl(231, 15%, 25%) */
+    --popover: 0, 0%, 21%; /* hsl(0, 0%, 21%) */
     --popover-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
 
-    --primary: 265 70% 58%; /* hsl(265 70% 58%) */
+    --primary: 35 67% 40%; /* hsl(35 67% 40%) */
     --primary-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
 
-    --secondary: 326 100% 74%; /* hsl(326 100% 74%) */
+    --secondary: 35 67% 40%; /* hsl(35 67% 40%) */
     --secondary-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
 
-    --muted: 265 55% 69%; /* hsl(265 55% 69%) */
-    --muted-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+    --muted: 42 36% 81%; /* hsl(42 36% 81%) */
+    --muted-foreground: 42 100% 5%; /* hsl(42 100% 5%) */
 
-    --accent: 31 100% 71%; /* hsl(265 100% 71%) */
+    --accent: 24 95% 5%; /* hsl(24 95% 5%) */
     --accent-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
 
     --destructive: 0 84.2% 60.2%; /* hsl(0 84.2% 60.2%) */

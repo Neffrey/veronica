@@ -8,9 +8,12 @@ const Footer = () => {
   return (
     <div
       // Row Container
-      className="flex w-full items-center justify-center border-t-4 border-solid border-secondary-foreground bg-gradient-to-r from-primary/85 from-10% via-primary/60 via-50% to-primary/85 to-90% px-5 py-6 shadow-xl"
+      className="flex w-full flex-wrap items-center justify-center border-t-2 border-solid border-muted bg-accent px-5 py-6 shadow-xl"
     >
-      <h3 className="text-center text-lg font-semibold lowercase tracking-widest text-secondary-foreground">
+      <h3 className="w-full text-center font-semibold lowercase tracking-widest text-accent-foreground/90">
+        Copyright @ {new Date().getFullYear()}
+      </h3>
+      <h3 className="text-center text-xs font-semibold lowercase tracking-widest text-accent-foreground/50">
         Made with love by
       </h3>
       <Link
@@ -21,7 +24,7 @@ const Footer = () => {
       >
         <Button
           variant="link"
-          className="text-lg tracking-widest text-secondary-foreground"
+          className="p-2 text-xs tracking-widest text-accent-foreground/50"
         >
           neffrey
         </Button>

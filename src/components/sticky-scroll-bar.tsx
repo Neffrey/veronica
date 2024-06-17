@@ -20,7 +20,7 @@ const StickyScrollBar = ({ children }: StickyScrollBarProps) => {
       // Row Container
       ref={headerRef}
       className={cn(
-        "border-primary-foreground bg-primary z-40 flex h-[75px] w-full items-center justify-between border-b-4 px-5 py-3",
+        "z-40 flex h-[75px] w-full items-center justify-between border-b-2 border-muted bg-accent px-5 py-3",
         useStickyScrollUp({
           enableBelowWidth: 1024,
           elementHeight: headerRef.current?.clientHeight,

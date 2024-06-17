@@ -97,7 +97,7 @@ const ContactForm = () => {
       </label>
       <input
         type="text"
-        placeholder="Enter your email address"
+        placeholder="Enter your email"
         className={
           "w-full rounded-md p-2 text-base text-black placeholder-black/80" +
           (errors?.email?.message

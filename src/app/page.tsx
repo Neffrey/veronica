@@ -19,7 +19,7 @@ export default function Home() {
         // Hero Row Container
         className="hero relative grid min-h-[90vh] w-full grid-cols-1 items-center justify-items-center sm:grid-cols-7 sm:grid-rows-5"
         style={{
-          backgroundImage: `url(/bg1.jpg)`,
+          backgroundImage: `url(/clippers.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -57,7 +57,11 @@ export default function Home() {
           </Link>
           <div className="p-4" />
           <Link href="/#contact">
-            <Button size={"lg"} variant={"secondary"}>
+            <Button
+              size={"lg"}
+              variant={"secondary"}
+              className="text-lg font-bold lowercase tracking-widest"
+            >
               Send Me A Message
             </Button>
           </Link>
@@ -69,7 +73,7 @@ export default function Home() {
           className="absolute bottom-5 left-[50%-1.5rem] z-10 h-12 w-12 cursor-pointer text-6xl transition ease-linear hover:h-14 hover:w-14 hover:-translate-y-1 hover:scale-105"
           passHref
         >
-          <ChevronDown className="hover:fill-success fill-white" />
+          <ChevronDown className="hover:fill-success fill-foreground" />
         </Link>
       </div>
 
@@ -113,7 +117,7 @@ export default function Home() {
        */}
       <div
         id="gallery"
-        className="grid min-w-full grid-cols-1 justify-items-center bg-primary px-8 py-20 lg:grid-cols-2 lg:px-24 xl:px-40"
+        className="grid min-w-full grid-cols-1 justify-items-center bg-primary/50 px-8 py-20 lg:grid-cols-2 lg:px-24 xl:px-40"
       >
         <div
           className="relative max-w-xs lg:col-start-2 lg:row-start-1 lg:max-w-xs"
@@ -197,7 +201,7 @@ export default function Home() {
        */}
       <div
         id="contact"
-        className="flex min-w-full flex-col items-center justify-center bg-secondary p-20"
+        className="flex min-w-full flex-col items-center justify-center bg-primary/50 p-20"
       >
         <div
           // Text box container
