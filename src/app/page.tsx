@@ -31,11 +31,11 @@ export default function Home() {
           className="z-10 flex h-2/3 flex-col items-center justify-center rounded-lg bg-black/60 p-10 sm:col-span-5 sm:col-start-3 sm:row-span-5"
         >
           <Link href="./#about">
-            <h1 className="text-center text-5xl lowercase">Veronica Penn</h1>
+            <h1 className="text-center text-5xl">Veronica Penn</h1>
           </Link>
           <div className="p-2" />
           <div className="text-center text-2xl lowercase">
-            hairstyling services, tailored to your unique beauty
+            haircutting services, tailored to your unique style
           </div>
           <div className="p-4" />
           <Link href="/#services">
