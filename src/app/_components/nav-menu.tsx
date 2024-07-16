@@ -8,8 +8,8 @@ export type NavItems = {
 
 // Nav items
 const navItems: NavItems = [
-  { title: "Services", href: "/#services" },
-  { title: "Gallery", href: "/#gallery" },
+  // { title: "Services", href: "/#services" },
+  // { title: "Gallery", href: "/#gallery" },
   { title: "About Me", href: "/#about" },
   { title: "Get in Touch", href: "/#contact" },
 ];

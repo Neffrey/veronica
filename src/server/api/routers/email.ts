@@ -15,7 +15,7 @@ export const emailRouter = createTRPCRouter({
         .post(`${env.SMTP2GO_API_URL}email/send`, {
           api_key: env.SMTP2GO_API_KEY,
           to: [`<${input.email}>`],
-          sender: `VPcuts <${env.SMTP2GO_SENDER_EMAIL}>`,
+          sender: `VP Cuts <${env.SMTP2GO_SENDER_EMAIL}>`,
           template_id: "3862199",
           custom_headers: [
             {
@@ -38,7 +38,7 @@ export const emailRouter = createTRPCRouter({
         .post(`${env.SMTP2GO_API_URL}email/send`, {
           api_key: env.SMTP2GO_API_KEY,
           to: [`<${env.SMTP2GO_SENDER_EMAIL}>`],
-          sender: `VPcuts <${env.SMTP2GO_SENDER_EMAIL}>`,
+          sender: `VP Cuts <${env.SMTP2GO_SENDER_EMAIL}>`,
           template_id: "9147975",
           template_data: {
             email: input.email,
