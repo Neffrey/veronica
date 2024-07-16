@@ -34,42 +34,53 @@ export default function Home() {
             <h1 className="text-center text-5xl">Veronica Penn</h1>
           </Link>
           <div className="p-2" />
-          <div className="text-center text-2xl lowercase">
-            haircutting services, tailored to your unique style
+          <div className="text-center text-2xl">
+            Haircutting services, tailored to your unique style
           </div>
           <div className="p-4" />
-          <Link href="/#services">
+          {/* <Link href="/#services">
             <div className="hover:text-success cursor-pointer text-center text-2xl lowercase transition ease-linear hover:-translate-y-1 hover:scale-105">
               Services
             </div>
-          </Link>
-          <div className="p-1" />
+          </Link> */}
+          {/* <div className="p-1" />
           <Link href="/#gallery">
             <div className="hover:text-success cursor-pointer text-center text-2xl lowercase transition ease-linear hover:-translate-y-1 hover:scale-105">
               Gallery
             </div>
-          </Link>
-          <div className="p-1" />
-          <Link href="/#about">
+          </Link> */}
+          {/* <div className="p-1" /> */}
+          {/* <Link href="/#about">
             <div className="hover:text-success cursor-pointer text-center text-2xl lowercase transition ease-linear hover:-translate-y-1 hover:scale-105">
               About Me
             </div>
-          </Link>
+          </Link> */}
           <div className="p-4" />
-          <Link href="/#contact">
-            <Button
-              size={"lg"}
-              variant={"secondary"}
-              className="text-lg font-bold lowercase tracking-widest"
-            >
-              Send Me A Message
-            </Button>
-          </Link>
+          <div className="flex w-full justify-around">
+            <Link href="/#about">
+              <Button
+                size={"lg"}
+                variant={"secondary"}
+                className="text-lg font-bold lowercase tracking-widest"
+              >
+                About Me
+              </Button>
+            </Link>
+            <Link href="/#contact">
+              <Button
+                size={"lg"}
+                variant={"secondary"}
+                className="text-lg font-bold lowercase tracking-widest"
+              >
+                Send Me A Message
+              </Button>
+            </Link>
+          </div>
         </div>
 
         <Link
           // Scroll down chevron
-          href="./#services"
+          href="./#about"
           className="absolute bottom-5 left-[50%-1.5rem] z-10 h-12 w-12 cursor-pointer text-6xl transition ease-linear hover:h-14 hover:w-14 hover:-translate-y-1 hover:scale-105"
           passHref
         >
@@ -77,7 +88,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div
+      {/* <div
         // Services Row Container
         id="services"
         className="bg-base-100 grid min-w-full grid-cols-1 justify-items-center px-8 py-20 lg:grid-cols-2 xl:grid-cols-7"
@@ -115,6 +126,7 @@ export default function Home() {
       {/*
        ***    Gallery Row container
        */}
+      {/*
       <div
         id="gallery"
         className="grid min-w-full grid-cols-1 justify-items-center bg-primary/50 px-8 py-20 lg:grid-cols-2 lg:px-24 xl:px-40"
@@ -153,7 +165,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/*
        ***    About Row container
@@ -177,7 +189,7 @@ export default function Home() {
           className="mt-10 max-w-md rounded-md bg-black/40 p-10 lg:mt-0 xl:col-span-4 xl:mr-24"
         >
           <div className="flex flex-col">
-            <h3 className="text-center text-4xl lowercase">About Me</h3>
+            <h3 className="text-center text-4xl">About Me</h3>
             <div className="p-3" />
             <p className="text-base">
               I’m Veronica Penn, a 2012 Century College beauty school graduate
@@ -209,9 +221,7 @@ export default function Home() {
         >
           <div className="grid-col-1 grid justify-items-center gap-10 lg:grid-cols-2">
             <div className="flex max-w-lg flex-col">
-              <h2 className="mb-10 text-center text-4xl lowercase">
-                {`Get In Touch`}
-              </h2>
+              <h2 className="mb-10 text-center text-4xl">{`Get In Touch`}</h2>
               <div className="p-2" />
               <p className="text-base">
                 We’d love to help you achieve the perfect look! Whether you’re
@@ -221,8 +231,11 @@ export default function Home() {
               <br />
               <p className="text-base">
                 To book an appointment or for any inquiries, please don’t
-                hesitate to reach out. Contact us today and let us bring out the
-                best in your hair!
+                hesitate to reach out.
+              </p>
+              <br />
+              <p className="text-base">
+                Contact me today and let’s bring out the best in your hair!
               </p>
             </div>
             <ContactForm />

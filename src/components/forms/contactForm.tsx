@@ -3,6 +3,7 @@ import { useState, type BaseSyntheticEvent, type FocusEvent } from "react";
 import { useForm } from "react-hook-form";
 
 // TRPC
+import { api } from "~/trpc/react";
 
 // COMPONENTS
 import {
@@ -32,26 +33,25 @@ const ContactForm = () => {
     defaultValues,
   });
 
-  // ORIGINAL TRPC API CALL
   // tRPC
-  // const sendEmailToMe = api.email.sendEmailToMe.useMutation({
-  //   onSuccess: () => {
-  //     setIsSubmitting(false);
-  //     setIsSuccess(true);
-  //   },
-  //   onError: (error) => {
-  //     setIsSubmitting(false);
-  //   },
-  // });
-  // const sendEmailToVisitor = api.email.sendEmailToVisitor.useMutation({
-  //   onSuccess: () => {
-  //     setIsSubmitting(false);
-  //     setIsSuccess(true);
-  //   },
-  //   onError: (error) => {
-  //     setIsSubmitting(false);
-  //   },
-  // });
+  const sendEmailToMe = api.email.sendEmailToMe.useMutation({
+    onSuccess: () => {
+      setIsSubmitting(false);
+      setIsSuccess(true);
+    },
+    onError: (error) => {
+      setIsSubmitting(false);
+    },
+  });
+  const sendEmailToVisitor = api.email.sendEmailToVisitor.useMutation({
+    onSuccess: () => {
+      setIsSubmitting(false);
+      setIsSuccess(true);
+    },
+    onError: (error) => {
+      setIsSubmitting(false);
+    },
+  });
 
   // Handle Field Validation
   const validateField = (field: SchemaKey, value: string) => {
@@ -67,16 +67,14 @@ const ContactForm = () => {
     e.preventDefault();
     validateField("email", getValues("email"));
     validateField("message", getValues("message"));
-    console.log("email", getValues("email"));
-    console.log("message", getValues("message"));
-    // if (!errors.email && !errors.message) {
-    //   sendEmailToMe.mutate(getValues());
-    //   sendEmailToVisitor.mutate(getValues());
-    //   setIsSubmitting(true);
-    // }
-    // if (errors.email) {
-    //   setFocus("email");
-    // }
+    if (!errors.email && !errors.message) {
+      sendEmailToMe.mutate(getValues());
+      sendEmailToVisitor.mutate(getValues());
+      setIsSubmitting(true);
+    }
+    if (errors.email) {
+      setFocus("email");
+    }
   };
 
   if (isSuccess) return <ContactFormSuccess />;
@@ -88,7 +86,7 @@ const ContactForm = () => {
       <label
         htmlFor="email"
         onClick={() => setFocus("email")}
-        className="w-full pb-1 text-lg lowercase tracking-wider"
+        className="w-full pb-1 tracking-wider"
       >
         {`Email address`}
         {errors.email?.message ? (
@@ -113,7 +111,7 @@ const ContactForm = () => {
       <label
         htmlFor="message"
         onClick={() => setFocus("message")}
-        className="w-full pb-1 text-lg lowercase tracking-wider"
+        className="w-full pb-1 tracking-wider"
       >
         {`Message`}
         {errors.message?.message ? (

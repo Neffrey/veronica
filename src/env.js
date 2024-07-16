@@ -8,6 +8,9 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
+    SMTP2GO_API_URL: z.string(), // ="https://api.smtp2go.com/v3/"
+    SMTP2GO_API_KEY: z.string(), // ="api-9BBF9A4C29F349EA86427C9D4D1AA26E"
+    SMTP2GO_SENDER_EMAIL: z.string(), // ="veronica@vpcuts.com"
   },
 
   /**
@@ -25,6 +28,9 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
+    SMTP2GO_API_URL: process.env.SMTP2GO_API_URL,
+    SMTP2GO_API_KEY: process.env.SMTP2GO_API_KEY,
+    SMTP2GO_SENDER_EMAIL: process.env.SMTP2GO_SENDER_EMAIL,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**
