@@ -14,7 +14,7 @@ const Footer = () => {
         Copyright @ {new Date().getFullYear()}
       </h3>
       <h3 className="text-center text-xs font-semibold lowercase tracking-widest text-accent-foreground/50">
-        Made with love by
+        Made by
       </h3>
       <Link
         href="https://neffrey.com"
